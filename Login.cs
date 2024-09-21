@@ -29,5 +29,12 @@ namespace BankManagementSystem
             //exit program
             Application.Exit();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //redirect to reset password page
+            ResetPassword resetPassword = new ResetPassword();
+            resetPassword.Show();
+        }
     }
 }

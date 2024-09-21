@@ -16,5 +16,18 @@ namespace BankManagementSystem
         {
             InitializeComponent();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //redirect to form page
+            RegistrationForm registrationForm = new RegistrationForm();
+            registrationForm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //exit program
+            Application.Exit();
+        }
     }
 }

@@ -21,5 +21,12 @@ namespace BankManagementSystem
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //redirect to login page
+            Login login = new Login();
+            login.Show();
+        }
     }
 }

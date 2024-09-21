@@ -19,8 +19,11 @@ namespace BankManagementSystem
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //redirect to form page
             RegistrationForm registrationForm = new RegistrationForm();
+            //hide form
+            this.Hide();
+
+            //redirect to form page
             registrationForm.Show();
         }
 
@@ -32,8 +35,11 @@ namespace BankManagementSystem
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //redirect to reset password page
             ResetPassword resetPassword = new ResetPassword();
+            //hide form
+            this.Hide();
+
+            //redirect to reset password page
             resetPassword.Show();
         }
     }

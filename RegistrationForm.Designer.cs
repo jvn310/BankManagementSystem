@@ -174,6 +174,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(65, 216);
             this.textBox4.Name = "textBox4";
+            this.textBox4.PasswordChar = '*';
             this.textBox4.Size = new System.Drawing.Size(447, 22);
             this.textBox4.TabIndex = 7;
             // 
@@ -191,6 +192,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(65, 290);
             this.textBox5.Name = "textBox5";
+            this.textBox5.PasswordChar = '*';
             this.textBox5.Size = new System.Drawing.Size(447, 22);
             this.textBox5.TabIndex = 9;
             // 
@@ -211,6 +213,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // RegistrationForm
             // 

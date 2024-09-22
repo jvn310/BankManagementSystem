@@ -23,7 +23,7 @@ namespace BankManagementSystem
             //hide form
             this.Hide();
 
-            //redirect to form page
+            //redirect to form 
             registrationForm.Show();
         }
 
@@ -39,8 +39,18 @@ namespace BankManagementSystem
             //hide form
             this.Hide();
 
-            //redirect to reset password page
+            //redirect to reset password form
             resetPassword.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            //hide form
+            this.Hide();
+
+            //redirect to dashboard form
+            dashboard.Show();
         }
     }
 }

@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Controls;
 
 namespace BankManagementSystem
 {
@@ -33,7 +34,26 @@ namespace BankManagementSystem
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (tabControl1.SelectedTab.Text == "Logout")
+            {
+                // Confirm if the user wants to log out
+                DialogResult result = MessageBox.Show("Are you sure you want to logout?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+                if (result == DialogResult.Yes)
+                {
+                    // Show the login form
+                    Login login = new Login();
+                    login.Show();
+
+                    // close dashboard form
+                    this.Close();
+                }
+                else
+                {
+                    //revert back to first tab
+                    tabControl1.SelectedIndex = 0; 
+                }
+            }
         }
 
         private async void button1_Click(object sender, EventArgs e)
@@ -105,6 +125,23 @@ namespace BankManagementSystem
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+            //terminate program
+            Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //terminate program
+            Application.Exit();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
         {
             //terminate program
             Application.Exit();

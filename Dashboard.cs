@@ -68,7 +68,7 @@ namespace BankManagementSystem
                 decimal convertedAmount = await converter.ConvertCurrency(amount, fromCurrency, toCurrency);
 
                 // Display the result in a MessageBox
-                MessageBox.Show($"Converted Amount: {convertedAmount} {toCurrency}",
+                MessageBox.Show($"Converted Amount: {Math.Round(convertedAmount, 2)} {toCurrency}",
                     "Conversion Successful",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
